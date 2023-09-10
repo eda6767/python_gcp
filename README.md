@@ -25,8 +25,33 @@ pip3 --version
 ```
 
 
-
 ```
 pip install --upgrade google-cloud-bigquery
+```
+
+To test connection between out new VM and data on BigQuery, let's test with given code:
 
 ```
+from google.cloud import bigquery
+
+# Construct a BigQuery client object.
+client = bigquery.Client()
+
+query = """
+    SELECT *
+    FROM `coral-mariner-396009.data.table`
+"""
+query_job = client.query(query)  # Make an API request.
+
+print(query_job)
+
+df = client.query(query).to_dataframe()
+
+print(df.head())
+```
+
+Unfortunatelly we optained an error:
+```
+google.api_core.exceptions.Forbidden: 403 Access Denied: BigQuery BigQuery: Missing required OAuth scope. Need BigQuery or Cloud Platform read scope.
+```
+That is why now we have to give permission to service account
