@@ -6,6 +6,7 @@ In this scenario we are gonna create pipeline with enrichment data in Python usi
 Useful materials for this task:
 https://cloud.google.com/python/docs/setup#linux
 https://cloud.google.com/bigquery/docs/reference/libraries#client-libraries-install-python
+https://cloud.google.com/appengine/docs/standard/python3/specifying-dependencies
 
 
 <br/> 
