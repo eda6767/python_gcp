@@ -1,4 +1,8 @@
-# python_gcp
+# Python on Google Cloud Platform
+
+In this scenario we are gonna create pipeline with enrichment data in Python using Cloud Compute engine, Airflow and BigQuery. The task will indicate if given transaction is transaction - paying invoice, paying for renting a flat, salary etc.
+
+In first step we will prepare and create virtual machine with python installed.
 
 <p align="center">
 </p>
