@@ -3,10 +3,15 @@
 <sub/>
 In this scenario we are gonna create pipeline with enrichment data in Python using Cloud Compute engine, Airflow and BigQuery. The task will indicate if given transaction is transaction - paying invoice, paying for renting a flat, salary etc.
 
+<br/> 
 Useful materials for this task:
-https://cloud.google.com/python/docs/setup#linux
-https://cloud.google.com/bigquery/docs/reference/libraries#client-libraries-install-python
-https://cloud.google.com/appengine/docs/standard/python3/specifying-dependencies
+
+<br/> 
+<br/>  https://cloud.google.com/python/docs/setup#linux <br/> 
+
+<br/>  https://cloud.google.com/bigquery/docs/reference/libraries#client-libraries-install-python <br/> 
+
+<br/>  https://cloud.google.com/appengine/docs/standard/python3/specifying-dependencies <br/> 
 
 
 <br/> 
