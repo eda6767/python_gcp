@@ -32,9 +32,11 @@ sudo apt-get install wget
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python3 get-pip.py
 pip3 install --upgrade google-cloud-bigquery
+pip3 install pandas-gbq
 pip3 install pandas
 pip3 install numpy
 pip3 install db-types
+pip3 install pandas-gbq
 ```
 
 To test connection between out new VM and data on BigQuery, let's test with given code:
