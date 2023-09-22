@@ -31,8 +31,9 @@ sudo apt-get install python3-distutils
 sudo apt-get install wget
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python3 get-pip.py
-pip install --upgrade google-cloud-bigquery
+pip3 install --upgrade google-cloud-bigquery
 pip3 install pandas
+pip3 install numpy
 pip3 install db-types
 ```
 
