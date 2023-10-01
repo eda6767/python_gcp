@@ -7,12 +7,14 @@ In this scenario we are gonna create pipeline with enrichment data in Python usi
 Useful materials for this task:
 
 <br/> 
-<br/>  https://cloud.google.com/python/docs/setup#linux <br/> 
-
-<br/>  https://cloud.google.com/bigquery/docs/reference/libraries#client-libraries-install-python <br/> 
-
-<br/>  https://cloud.google.com/appengine/docs/standard/python3/specifying-dependencies <br/> 
-
+</br> 
+https://cloud.google.com/python/docs/setup#linux
+<br/> 
+</br> 
+https://cloud.google.com/bigquery/docs/reference/libraries#client-libraries-install-python 
+<br/> 
+</br> 
+https://cloud.google.com/appengine/docs/standard/python3/specifying-dependencies 
 
 <br/> 
 <br/> 
