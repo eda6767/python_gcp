@@ -85,4 +85,14 @@ After creating proper service account, we can stop and then edit VM substituting
 <img width="500" alt="Zrzut ekranu 2023-09-10 o 16 37 53" src="https://github.com/eda6767/python_gcp/assets/102791467/79903a61-e972-4d39-9e1f-0a43a40d943b">
 </p>
 
+<br/> 
+</br> 
 
+After changing the service account for a service with proper permissions we can run python script on Compute Engine after SSH:
+
+<br/> 
+</br> 
+
+```
+python3 bg_client_test.py
+```
