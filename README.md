@@ -96,3 +96,39 @@ After changing the service account for a service with proper permissions we can 
 ```
 python3 bg_client_test.py
 ```
+
+<br/> 
+</br> 
+
+<img width="500" alt="Zrzut ekranu 2023-10-11 o 21 17 38" src="https://github.com/eda6767/python_gcp/assets/102791467/dedbace2-43e3-49de-aa82-44dfc7bcecfd">
+
+<br/> 
+</br> 
+
+To save solution to BigQuery wee need to create a schema in LoadJobConfig, because columns with string values are represented in Python as an "object" dtype.
+
+<br/> 
+</br> 
+
+```
+job_config = bigquery.LoadJobConfig(
+    schema=[
+        bigquery.SchemaField("crnt_acct_pkg_trx_key", "STRING"),
+        bigquery.SchemaField("sys_cd", "STRING"),
+        bigquery.SchemaField("acct_key", "STRING"),
+        bigquery.SchemaField("acct_id", "STRING"),
+        bigquery.SchemaField("frst_acct_key", "STRING"),
+        bigquery.SchemaField("main_acct_id", "STRING"),
+        bigquery.SchemaField("title", "STRING"),
+        bigquery.SchemaField("receiver_acct_key", "STRING"),
+        bigquery.SchemaField("receiver_acct_id", "STRING"),
+        bigquery.SchemaField("receiver_nm_address", "STRING"),
+        bigquery.SchemaField("rejection_rsn_dsc", "STRING"),
+        bigquery.SchemaField("sender_nm_address", "STRING"),
+        bigquery.SchemaField("tech_etl_pkg_cd", "STRING")
+    ]
+)
+
+job = client.load_table_from_dataframe(tagger.tagged, dpcrnt_acct_pkg_trx_fcd, job_config=job_config)
+
+```
