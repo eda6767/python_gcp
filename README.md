@@ -42,6 +42,14 @@ pip3 install numpy
 pip3 install pandas-gbq
 ```
 
+<br/> 
+</br> 
+
+<img width="500" alt="Zrzut ekranu 2023-10-11 o 21 08 57" src="https://github.com/eda6767/python_gcp/assets/102791467/ec1cd1ee-6a84-40a1-9d9e-fa5e4284fa43">
+
+<br/> 
+</br> 
+
 To test connection between out new VM and data on BigQuery, let's test with given code:
 
 ```
