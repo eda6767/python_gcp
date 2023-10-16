@@ -56,8 +56,13 @@ pip3 install pandas-gbq
 <br/> 
 </br> 
 
+<sub>
 To test connection between out new VM and data on BigQuery, let's test with given code:
+</sub> 
 
+
+<sub>
+    
 ```
 from google.cloud import bigquery
 
@@ -76,16 +81,24 @@ df = client.query(query).to_dataframe()
 
 print(df.head())
 ```
+</sub>
 
-Unfortunatelly we optained an error:
+
+
+<sub> Unfortunatelly we optained an error: </sub>
+
+
+<sub>
+    
 ```
 google.api_core.exceptions.Forbidden: 403 Access Denied: BigQuery BigQuery: Missing required OAuth scope. Need BigQuery or Cloud Platform read scope.
 ```
-That is why now we have to give permission to service account and edit virtual machines. <br/> 
 
-For this purpose we need a service account with permission: BigQuery Job User and BigQuery Data Viewer. <br/> 
+</sub>
+<br/> 
 
-After creating proper service account, we can stop and then edit VM substituting service account:<br/> 
+<sub>
+That is why now we have to give permission to service account and edit virtual machines. For this purpose we need a service account with permission: BigQuery Job User and BigQuery Data Viewer. After creating proper service account, we can stop and then edit VM substituting service account: </sub>
 
 <p align="center">
 <img width="500" alt="Zrzut ekranu 2023-09-10 o 16 37 53" src="https://github.com/eda6767/python_gcp/assets/102791467/79903a61-e972-4d39-9e1f-0a43a40d943b">
