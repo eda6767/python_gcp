@@ -1,30 +1,34 @@
 # Python on Google Cloud Platform
 
-<sub/>
-In this scenario we are gonna create pipeline with enrichment data in Python using Cloud Compute engine, Airflow and BigQuery. The task will indicate if given transaction is transaction - paying invoice, paying for renting a flat, salary etc.
+<sub>
+In this scenario we are gonna create pipeline with enrichment data in Python using Cloud Compute engine, Airflow and BigQuery. The task will indicate if given transaction is transaction - paying invoice, paying for renting a flat, salary etc. </sub> 
 
 <br/> 
+<sub>
 Useful materials for this task:
 
 <br/> 
 </br> 
 https://cloud.google.com/python/docs/setup#linux
 <br/> 
-</br> 
 https://cloud.google.com/bigquery/docs/reference/libraries#client-libraries-install-python 
 <br/> 
-</br> 
 https://cloud.google.com/appengine/docs/standard/python3/specifying-dependencies 
+</sub> 
+
 
 <br/> 
 <br/> 
+
+<sub>
 In first step we will prepare and create virtual machine with python installed.
+</sub> 
 
 <p align="center">
 </p>
 
 
-
+<sub>
 
 ```
 sudo apt update
@@ -41,6 +45,8 @@ pip3 install pandas
 pip3 install numpy
 pip3 install pandas-gbq
 ```
+
+</sub> 
 
 <br/> 
 </br> 
