@@ -106,15 +106,19 @@ That is why now we have to give permission to service account and edit virtual m
 
 <br/> 
 </br> 
-
-After changing the service account for a service with proper permissions we can run python script on Compute Engine after SSH:
+<sub>
+After changing the service account for a service with proper permissions we can run python script on Compute Engine after SSH: </sub>
 
 <br/> 
 </br> 
 
+<sub>
+    
 ```
 python3 bg_client_test.py
 ```
+</sub>
+
 
 <br/> 
 </br> 
@@ -124,10 +128,14 @@ python3 bg_client_test.py
 <br/> 
 </br> 
 
+<sub>
 To save solution to BigQuery wee need to create a schema in LoadJobConfig, because columns with string values are represented in Python as an "object" dtype.
+</sub>
 
 <br/> 
 </br> 
+
+<sub>
 
 ```
 job_config = bigquery.LoadJobConfig(
@@ -151,3 +159,4 @@ job_config = bigquery.LoadJobConfig(
 job = client.load_table_from_dataframe(tagger.tagged, dpcrnt_acct_pkg_trx_fcd, job_config=job_config)
 
 ```
+</sub>
